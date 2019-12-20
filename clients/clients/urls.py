@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import list_clients, test_function, special_case_2003, special_case, month_archive, hello
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('hello/<str:name>/', hello),
@@ -25,4 +28,4 @@ urlpatterns = [
     path('test/', test_function),
     path('clients/', list_clients),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -43,6 +43,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2314" y="262" key="SettingsEditor" timestamp="1576876259164">
       <screen x="1680" y="130" width="1920" height="1057" />
