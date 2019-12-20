@@ -24,3 +24,11 @@ def update_client(request, id):
         return redirect(list_clients)
 
     return render(request, 'form.html', {'form':form})
+
+def delete_client(request, id):
+    client = get_object_or_404(Client, pk=id)
+    if request.method == 'POST':
+        client.delete()
+        return redirect(list_clients)
+
+    return render(request, 'confirm.html', {'client':client})
