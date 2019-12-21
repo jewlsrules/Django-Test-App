@@ -18,6 +18,7 @@ from django.urls import path, include
 from .views import list_clients, test_function, special_case_2003, special_case, month_archive, hello
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
@@ -28,4 +29,6 @@ urlpatterns = [
     path('test/', test_function),
     path('clients/', include('core.urls')),
     path('admin/', admin.site.urls),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('logout/', auth_views.logout, name='logout'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
