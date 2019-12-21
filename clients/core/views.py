@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Client
 from .form import ClientForm
+from django.contrib.auth.decorators import login_required
 
 def list_clients(request):
     clients = Client.objects.all()
     return render(request, 'clients.html', {'clients': clients})
 
+@login_required
 def new_client(request):
     form = ClientForm(request.POST or None, request.FILES or None)
 
@@ -15,6 +17,7 @@ def new_client(request):
 
     return render(request, 'form.html', {'form':form})
 
+@login_required
 def update_client(request, id):
     client = get_object_or_404(Client, pk=id)
     form = ClientForm(request.POST or None, request.FILES or None, instance=client)
@@ -25,6 +28,7 @@ def update_client(request, id):
 
     return render(request, 'form.html', {'form':form})
 
+@login_required
 def delete_client(request, id):
     client = get_object_or_404(Client, pk=id)
     if request.method == 'POST':
