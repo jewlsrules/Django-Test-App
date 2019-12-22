@@ -4,4 +4,13 @@ h1 {
 
 body {
     background: black;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
