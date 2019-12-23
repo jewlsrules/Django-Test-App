@@ -128,4 +128,8 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = 'mymedia'
 
+LOGIN_URL = 'login'
+
+LOGIN_REDIRECT_URL = 'client_list'
+
 #CRUD = Create Read Update Delete
