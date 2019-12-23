@@ -47,6 +47,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2643" y="443" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577131698280">
+      <screen x="1680" y="130" width="1920" height="1057" />
+    </state>
+    <state x="2643" y="443" key="#com.intellij.fileTypes.FileTypeChooser/1680.130.1920.1057/0.23.1680.1027@1680.130.1920.1057" timestamp="1577131698280" />
     <state x="2314" y="262" key="SettingsEditor" timestamp="1576876259164">
       <screen x="1680" y="130" width="1920" height="1057" />
     </state>
@@ -55,5 +59,9 @@
       <screen x="1680" y="130" width="1920" height="1057" />
     </state>
     <state x="2312" y="528" key="com.intellij.ide.util.TipDialog/1680.130.1920.1057/0.23.1680.1027@1680.130.1920.1057" timestamp="1576872265757" />
+    <state x="2565" y="357" width="670" height="676" key="search.everywhere.popup" timestamp="1577132407003">
+      <screen x="1680" y="130" width="1920" height="1057" />
+    </state>
+    <state x="2565" y="357" width="670" height="676" key="search.everywhere.popup/1680.130.1920.1057/0.23.1680.1027@1680.130.1920.1057" timestamp="1577132407003" />
   </component>
 </project>
